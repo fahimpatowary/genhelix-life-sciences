@@ -19,6 +19,7 @@ img{
     height: auto;
     max-width: 100%;
     max-height: 100%;
+    border-radius: 10px;
 }
 
 .sectionmargintop{
@@ -32,10 +33,19 @@ img{
 .DivAlingItems{
     display: flex;
     align-items: center;
+    /* justify-content: center; */
 }
 
 /* highlights start */
-.highlightsServices img{
+.highlightsServices{
+    justify-content: center;
+}
+
+.highlightsServices .Imges{
+    margin-bottom: 20px;
+}
+
+.highlightsServices .Imges img{
     margin-bottom: 0;
 }
 
@@ -72,18 +82,70 @@ img{
     margin-bottom: 0;
     color: var(--paraColor);
 }
-/* end */
+/* highlights end */
+
+/* services start */
+.ServicesTitle{
+    margin-bottom: 40px;
+    max-width: 600px;
+}
+
+.ServicesTitle p{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.ServicesTitle h3{
+    font-weight: 700;
+    color: #3e3e3e;
+    margin-bottom: 0;
+}
+
+.serviceCard{
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.serviceCard .ServiceImages{
+    margin-bottom: 20px;
+}
+
+.serviceCard .ServiceImages img{
+    margin-bottom: 0px;
+}
+
+.serviceCard .ServiceImages{
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.serviceCard .ServiceImages .icon{
+    position: absolute;
+    bottom: -50px;
+    left: calc(50% - 40px);
+}
+/* highlights end */
 
 /* responsive start */
 @media screen  and (max-width: 991px) {
     .sectionmarginBottom{
         margin-bottom: 5px;
     }
+
+    .ServicesTitle{
+        margin-bottom: 25px;
+        max-width: 600px;
+    }
 }
 
 @media screen  and (max-width: 767px) {
     .sectionmarginBottom{
         margin-bottom: 0px;
+    }
+    
+    .ServicesTitle{
+        margin-bottom: 20px;
+        max-width: 600px;
     }
 }
 /* responsive end */
