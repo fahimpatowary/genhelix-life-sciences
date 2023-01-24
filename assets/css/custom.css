@@ -59,7 +59,7 @@ img{
 .heroSection {
     position: relative;
     min-height: 600px;
-    background: url(/assets/images/heros12.png) no-repeat bottom center;
+    background: url(../images/heros12.png) no-repeat bottom center;
     background-size: cover;
     display: flex;
     justify-content: center;
