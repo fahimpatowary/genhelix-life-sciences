@@ -10,8 +10,28 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-p{
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+p, h2, h1{
     margin-bottom: 20px;
+}
+
+.Btn{
+    color: white;
+    background: var(--BG1);
+    padding: 9px 18px;
+    display: block;
+    border-radius: 22px;
+    width: 141px;
+    text-decoration: none;
+}
+
+.Btn:hover{
+    color: white;
+    background: var(--HoverBG);
 }
 
 img{
@@ -33,8 +53,104 @@ img{
 .DivAlingItems{
     display: flex;
     align-items: center;
-    /* justify-content: center; */
 }
+
+/* heros start */
+.heroSection {
+    position: relative;
+    min-height: 600px;
+    background: url(/assets/images/heros12.png) no-repeat bottom center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroSection .herosText{
+    max-width: 453px;
+}
+
+.heroSection .videoIntro{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.heroSection .herosText h1{
+    font-weight: 700;
+    color: var(--BG1);
+}
+
+.heroSection .herosText h1 span{
+    color: var(--h1Span);
+}
+
+.heroSection .herosText p{
+    color: #595959;
+}
+
+.heroSection .herosText .videoIntro i{
+    padding: 15px;
+    background-color: #1a588b;
+    color: white;
+    border-radius: 50%;
+    font-size: 25px;
+}
+
+.heroSection .herosText .videoIntro hr{
+    display: inline-block;
+    width: 30px;
+    background-color: black;
+    border: 1px solid rgb(0, 0, 0);
+    margin-right: 10px;
+    opacity: 1;
+}
+
+.herosText .HerosBtn{
+    display: flex;
+    font-size: 18px;
+}
+
+.herosText .HerosBtn .Btn:first-child{
+    margin-right: 15px;
+}
+
+.herosText .HerosBtn .Btn{
+    border-radius: 30px;
+    text-align: center;
+}
+/* heros end */
+
+/* CountingSection start */
+.CountingSection{
+    background-color: var(--BG1);
+    padding: 20px;
+}
+
+.Counting{
+    color: rgb(255 255 255);
+    background-color: #1a588b;
+    box-shadow: 0 0 4px #40d5e6;
+    text-align: center;
+    border-radius: 13px;
+    padding: 15px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Counting i{
+    font-size: 45px;
+    margin-right: 10px;
+}
+
+.Counting h4{
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 30px;
+}
+/* CountingSection end */
 
 /* highlights start */
 .highlightsServices{
@@ -52,16 +168,15 @@ img{
 .highlightsCard{
     padding: 15px;
     border-radius: 10px;
-    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    box-shadow: rgb(50 50 93 / 25%) 0px 27px 59px -14px, rgb(0 0 0 / 30%) 0px 22px 0px -53px;
     background-color: var(--highlights-bg);
     margin-bottom: 20px;
 }
 
 .highlightsCard .icon{
     padding: 20px;
-    height: 74px;
-    width: 78px;
+    height: 62px;
+    width: 66px;
     border-radius: 50px;
     margin: auto;
     margin-bottom: 20px;
@@ -71,7 +186,7 @@ img{
 }
 
 .highlightsCard .icon i{
-    font-size: 33px;
+    font-size: 24px;
 }
 
 .highlightsCard h3{
@@ -103,7 +218,13 @@ img{
 
 .serviceCard{
     background-color: white;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgb(50 50 93 / 25%) 0px 7px 15px -5px, rgb(0 0 0 / 30%) 0px 8px 3px -8px;
+    transition: all .8s;
+}
+
+.serviceCard:hover{
+    transform: translateX(1px);
+    box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -5px, rgb(0 0 0 / 30%) 0px 7px 20px;
 }
 
 .serviceCard .ServiceImages{
@@ -122,9 +243,48 @@ img{
 .serviceCard .ServiceImages .icon{
     position: absolute;
     bottom: -50px;
-    left: calc(50% - 40px);
+    left: calc(50% - 28px);
 }
 /* highlights end */
+
+
+/* About us start */
+.AboutUsTest ul li{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.AboutUsTest ul li i{
+    margin-right: 20px;
+    border: 3px dashed var(--BG1);
+    padding: 10px;
+    border-radius: 50%;
+    color: var(--BG1);
+    font-size: 30px;
+    height: 55px;
+    width: 55px;
+}
+
+.AboutUsTest ul li p{
+    margin-bottom: 0px;
+}
+/* About us end */
+
+/* Features start */
+.Features{
+    background-image: url(/assets/images/whyUSbg.png);
+}
+
+.Features .serviceCard{
+    background-image: url(/assets/images/whyUS.png);
+}
+
+.Features .serviceCard .icon{
+    padding: 8px;
+    height: 73px;
+    width: 79px;
+}
+/* Features end */
 
 /* responsive start */
 @media screen  and (max-width: 991px) {
@@ -132,9 +292,17 @@ img{
         margin-bottom: 5px;
     }
 
+    .sectionmargintop{
+        margin-top: 25px;
+    }
+
     .ServicesTitle{
         margin-bottom: 25px;
         max-width: 600px;
+    }
+    
+    .Counting i{
+        margin-bottom: 15px;
     }
 }
 
@@ -142,16 +310,132 @@ img{
     .sectionmarginBottom{
         margin-bottom: 0px;
     }
+
+    .sectionmargintop{
+        margin-top: 20px;
+    }
     
     .ServicesTitle{
         margin-bottom: 20px;
         max-width: 600px;
     }
+
+    .highlightsCard{
+        box-shadow: rgb(50 50 93 / 10%) 0px 6px 8px -5px, rgb(0 0 0 / 20%) 0px 6px 11px;
+    }
+
+    .col-md-8{
+        padding: 0 5px;
+    }
+
+    .col-6{
+        padding: 0 7px;
+    }
+    
+    .Counting{
+        margin-bottom: 15px;
+    }
+
+    .CountingSection .container{
+        margin: 0;
+        padding: 0;
+    }
 }
 /* responsive end */
 
+/* animation stat */
+
+.videoIntroDiv {
+	position: relative;
+	box-shadow: 0 0 10px 5px rgba(119, 119, 119, 0.4);
+	background-color: var(--BG1);
+	overflow: hidden;
+    margin-right: 10px;
+}
+
+.videoIntroDiv span:nth-child(1) {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 3px;
+	background: linear-gradient(to right, #48484843, #3bff3b);
+	animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1 {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(100%);
+	}
+}
+
+.videoIntroDiv span:nth-child(2) {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 3px;
+	background: linear-gradient(to bottom, #17161826, #3bff3b);
+	animation: animate2 2s linear infinite;
+	animation-delay: 1s;
+}
+@keyframes animate2 {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(100%);
+	}
+}
+
+.videoIntroDiv span:nth-child(3) {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 3px;
+	background: linear-gradient(to left, #17161838, #3bff3b);
+	animation: animate3 2s linear infinite;
+}
+
+@keyframes animate3 {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+.videoIntroDiv span:nth-child(4) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 3px;
+	background: linear-gradient(to top, #1716182c, #3bff3b);
+	animation: animate4 2s linear infinite;
+	animation-delay: 1s;
+}
+
+@keyframes animate4 {
+	0% {
+		transform: translateY(100%);
+	}
+	100% {
+		transform: translateY(-100%);
+	}
+}
+
+/* animation */
 
 :root{
     --highlights-bg: #f3fcfd;
     --paraColor: rgb(99 99 99);
+    --BG1: #1a588b;
+    --HoverBG: #3787cc;
+    --h1Span:#40d5e6;
 }
