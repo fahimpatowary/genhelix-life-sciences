@@ -55,6 +55,110 @@ img{
     align-items: center;
 }
 
+/* navber start */
+.navbar-collapse {
+    justify-content: end;
+}
+
+nav{
+    background-color: var(--h1Span);
+    color: rgb(255, 255, 255);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    font-weight: 600;
+    color: rgba(255, 255, 255);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.active{
+    color: var(--BG1);
+}
+
+.TopNav{
+    padding: 10px 0;
+    background-color: #30b9c9;
+    color: white;
+}
+
+.TopNav .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.TopNav ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.TopNav ul li:not(:last-child){
+    margin-right: 1.5rem;
+}
+
+.TopNav .container .socilaDiv ul li{
+    margin-right: .3rem;
+}
+
+.TopNav .container .socilaDiv ul li i{
+    background-color: var(--BG1);
+    border-radius: 50%;
+    padding: 7px;
+    color: white;
+}
+/* navber end */
+
+/* footer start */
+footer{
+    background-color: var(--h1Span);
+    padding: 50px 0;
+}
+
+footer img{
+    margin-bottom: 20px;
+}
+
+footer p{
+    color: rgb(84, 84, 84);
+    margin-bottom: 0px;
+}
+
+footer h4{
+    font-weight: 600;
+    color: var(--BG1);
+    margin-bottom: 20px;
+}
+
+footer ul li{
+    margin-bottom: 12px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: rgb(84, 84, 84);
+    font-weight: 500;
+}
+
+footer ul li i{
+    background-color: var(--BG1);
+    border-radius: 50%;
+    padding: 7px;
+    color: white;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    margin-right: .5rem;
+}
+
+.LastFoote{
+    background-color: #1a588b;
+    color: rgb(187, 187, 187);
+    text-align: center;
+    padding: 20px 10px;
+}
+/* footer emd */
+
 /* heros start */
 .heroSection {
     position: relative;
@@ -304,6 +408,14 @@ img{
     .Counting i{
         margin-bottom: 15px;
     }
+
+    .AboutFooter{
+        margin-bottom: 20px;
+    }
+
+    footer{
+        padding: 25px 0;
+    }
 }
 
 @media screen  and (max-width: 767px) {
@@ -339,6 +451,30 @@ img{
     .CountingSection .container{
         margin: 0;
         padding: 0;
+    }
+
+    footer{
+        padding: 20px 0;
+    }
+
+    .TopNav .socilaDiv{
+        display: none;
+    }
+
+    .TopNav .ContactNeed{
+        width: 100%;
+    }
+
+    .TopNav .ContactNeed ul{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .TopNav .ContactNeed ul{
+        text-align: center;
+        flex-direction: column;
     }
 }
 /* responsive end */
