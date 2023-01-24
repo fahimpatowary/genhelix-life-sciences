@@ -272,11 +272,11 @@ img{
 
 /* Features start */
 .Features{
-    background-image: url(/assets/images/whyUSbg.png);
+    background-image: url(../images/whyUSbg.png);
 }
 
 .Features .serviceCard{
-    background-image: url(/assets/images/whyUS.png);
+    background-image: url(../images/whyUS.png);
 }
 
 .Features .serviceCard .icon{
