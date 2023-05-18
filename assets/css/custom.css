@@ -445,7 +445,7 @@ footer ul li i{
 
 /* 2 */
 .bg-contact-form-details .contact-form form{
-    transition: all 1.5s;
+    transition: all .5s;
     margin-bottom: 20px;
 }
 
@@ -485,6 +485,12 @@ footer ul li i{
     font-weight: 600;
 }
 /* contact page end */
+
+/* about us start */
+.aboutUs p{
+    text-align: justify;
+}
+/* about us end */
 
 /* responsive start */
 @media screen and (min-width: 1023px) {
