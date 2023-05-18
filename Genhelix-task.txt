@@ -1,0 +1,7 @@
+.cotact us
+.about us
+.blog
+.blog single
+.T & c
+.Return p
+.Disclaimer
