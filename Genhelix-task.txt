@@ -6,3 +6,7 @@
 .T & c
 .Return p
 .Disclaimer
+
+.services(done)
+.research(done)
+.research single(done)
