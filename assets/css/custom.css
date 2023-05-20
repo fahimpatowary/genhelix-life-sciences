@@ -492,6 +492,138 @@ footer ul li i{
 }
 /* about us end */
 
+/* blog start */
+.blogCard{
+    border-radius: 10px;
+    background-color: rgb(241, 241, 241);
+}
+
+.blogCard .text {
+    padding: 0 10px;
+}
+
+.blogCard .text ul li span {
+    padding: 3px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    color: white;
+    background-color: var(--BG1);
+}
+
+.blogCard .text a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.blogCard .text a:hover {
+    color: var(--HoverBG);
+}
+/* blog end */
+
+/* blog Single page start */
+.blogSingleHeros{
+    background: url('../images/blog-poto.webp');
+    color: black;
+}
+
+.blogSingleHeros .bg { 
+    background-color: rgba(109, 109, 109, 0.7);
+}
+
+.blogSingleHeros .herosText{
+    background: none;
+    padding: 4rem 0;
+}
+
+.blogSingleHeros .container h2{ 
+    /* color: var(--h1Span); */
+    color: white;
+}
+
+.single-blog-text p{
+    text-align: justify;
+}
+
+.single-blog-text ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.single-blog-text ul li i{
+    padding: 5px;
+    border: 1px solid rgb(169, 169, 169);
+    margin-right: .5rem;
+    border-radius: 50%;
+}
+
+.single-blog-text .recent-blogs h4{
+    font-size: 21px;
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 3px solid var(--BG1);
+}
+
+.single-blog-text ul li img{
+    width: 80px;
+    margin-right: .5rem;
+}
+
+.single-blog-text ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.single-blog-text ul li a:hover{
+    color: var(--HoverBG);
+}
+
+.single-blog-text .recent-blogs ul li{
+    text-align: justify;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.single-blog-text .recent-blogs ul li:not(:last-child){
+    border-bottom: 1px solid rgb(151, 151, 151);
+}
+
+.blog-comment form input,
+.blog-comment form textarea{
+    border: 1px solid var(--BG1);
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.blog-comment form input:focus,
+.blog-comment form textarea:focus{
+    border: none;
+    outline: none;
+    box-shadow: 0 0 4px 1px #7dc4ff;
+}
+
+.blog-comment form button{
+    padding: 10px 20px;
+    background-color: var(--BG1);
+    border-radius: 10px;
+    color: white;
+    border: none;
+    font-weight: 600;
+    outline: none;
+    font-size: 18px;
+}
+
+.blog-comment form button:hover{
+    background-color: var(--HoverBG);
+}
+/* blog Single page end */
+
 /* responsive start */
 @media screen and (min-width: 1023px) {
     footer ul,

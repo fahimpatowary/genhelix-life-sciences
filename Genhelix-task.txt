@@ -1,7 +1,8 @@
-.cotact us
-.about us
-.blog
-.blog single
+.cotact us(done)
+.about us(done)
+.blog(done)
+.blog single(done)
+.FQA
 .T & c
 .Return p
 .Disclaimer
