@@ -258,6 +258,54 @@ footer ul li i{
     border-radius: 30px;
     text-align: center;
 }
+
+.youtubeVideo{
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #302f2f;
+    padding: 6rem 20rem;
+    z-index: 1060;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+}
+
+.iframeDiv{
+    position: relative;
+}
+
+.youtubeVideo i{
+    position: absolute;
+    top: -70px;
+    right: 0px;
+    color: white;
+    font-size: 28px;
+    margin-bottom: 2rem;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: var(--HoverBG);
+}
+
+@media screen and (max-width: 767px) {
+    .youtubeVideo{
+        padding: 5rem 0;
+        overflow: hidden;
+        height: 105vh;
+    }
+
+    .youtubeVideo div{
+        width: 100%;
+    }
+
+    .youtubeVideo iframe{
+        width: 320px !important;
+    }
+}
 /* heros end */
 
 /* CountingSection start */
@@ -730,102 +778,6 @@ footer ul li i{
     background-color: var(--HoverBG);
 }
 /* research page end */
-
-/* responsirgb(255, 255, 255)
-@media screen and (min-width: 1023px) {
-    footer ul,
-    footer ul li:last-child{
-        margin-bottom: 0;
-    }
-}
-
-@media screen  and (max-width: 991px) {
-    .sectionmarginBottom{
-        margin-bottom: 5px;
-    }
-
-    .sectionmargintop{
-        margin-top: 25px;
-    }
-
-    .ServicesTitle{
-        margin-bottom: 25px;
-        max-width: 600px;
-    }
-    
-    .Counting i{
-        margin-bottom: 15px;
-    }
-
-    .AboutFooter{
-        margin-bottom: 20px;
-    }
-
-    footer{
-        padding: 25px 0;
-    }
-}
-
-@media screen  and (max-width: 767px) {
-    .sectionmarginBottom{
-        margin-bottom: 0px;
-    }
-
-    .sectionmargintop{
-        margin-top: 20px;
-    }
-    
-    .ServicesTitle{
-        margin-bottom: 20px;
-        max-width: 600px;
-    }
-
-    .highlightsCard{
-        box-shadow: rgb(50 50 93 / 10%) 0px 6px 8px -5px, rgb(0 0 0 / 20%) 0px 6px 11px;
-    }
-
-    .col-md-8{
-        padding: 0 5px;
-    }
-
-    .col-6{
-        padding: 0 7px;
-    }
-    
-    .Counting{
-        margin-bottom: 15px;
-    }
-
-    .CountingSection .container{
-        margin: 0;
-        padding: 0;
-    }
-
-    footer{
-        padding: 20px 0;
-    }
-
-    .TopNav .socilaDiv{
-        display: none;
-    }
-
-    .TopNav .ContactNeed{
-        width: 100%;
-    }
-
-    .TopNav .ContactNeed ul{
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-@media screen and (max-width: 374px) {
-    .TopNav .ContactNeed ul{
-        text-align: center;
-        flex-direction: column;
-    }
-}
-/* responsive end */
 
 /* animation stat */
 

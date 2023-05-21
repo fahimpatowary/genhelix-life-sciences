@@ -2,11 +2,16 @@
 .about us(done)
 .blog(done)
 .blog single(done)
-.FQA
-.T & c
-.Return p
-.Disclaimer
+.footer(need to fixed)(done)
+.FQA(done)
+.T & c(done)
+.Return & p(done)
+.Disclaimer(done)
 
 .services(done)
 .research(done)
 .research single(done)
+
+
+note: add blog at navigation(done)
+=====
