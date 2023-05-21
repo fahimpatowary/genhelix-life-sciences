@@ -85,6 +85,7 @@ nav{
 .navbar-expand-lg .navbar-nav .nav-link{
     font-weight: 600;
     color: rgba(255, 255, 255);
+    font-size: 17px;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link.active{
